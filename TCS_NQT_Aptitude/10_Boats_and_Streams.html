@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>no title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}pre{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;padding:1em;margin:.5em 0;overflow:auto;line-height:1.5;tab-size:4;hyphens:none;color:#aab1bf;background-color:#30353f!important;border:#4b5261;border-radius:3px}pre[class*=language-]{padding:1em}code[class*=language-] .token.cdata,code[class*=language-] .token.comment,code[class*=language-] .token.doctype,code[class*=language-] .token.prolog,pre[class*=language-] .token.cdata,pre[class*=language-] .token.comment,pre[class*=language-] .token.doctype,pre[class*=language-] .token.prolog{color:#5b6270}code[class*=language-] .namespace,pre[class*=language-] .namespace{opacity:.7}code[class*=language-] .token.constant,pre[class*=language-] .token.constant{color:#d19965}code[class*=language-] .token.boolean,code[class*=language-] .token.function-name,code[class*=language-] .token.number,pre[class*=language-] .token.boolean,pre[class*=language-] .token.function-name,pre[class*=language-] .token.number{color:#d19965}code[class*=language-] .token.tag,pre[class*=language-] .token.tag{color:#df6b75}code[class*=language-] .token.symbol,pre[class*=language-] .token.symbol{color:#56b5c2}code[class*=language-] .token.selector,pre[class*=language-] .token.selector{color:#c578dd}code[class*=language-] .token.attr-name,pre[class*=language-] .token.attr-name{color:#d19965}code[class*=language-] .token.string,pre[class*=language-] .token.string{color:#97c279}code[class*=language-] .token.char,pre[class*=language-] .token.char{color:#56b5c2}code[class*=language-] .token.url,pre[class*=language-] .token.url{color:#56b5c2}code[class*=language-] .token.operator,pre[class*=language-] .token.operator{color:#aab1bf}code[class*=language-] .token.atrule,code[class*=language-] .token.attr-value,code[class*=language-] .token.keyword,pre[class*=language-] .token.atrule,pre[class*=language-] .token.attr-value,pre[class*=language-] .token.keyword{color:#c578dd}code[class*=language-] .token.function,pre[class*=language-] .token.function{color:#61afef}code[class*=language-] .token.class-name,pre[class*=language-] .token.class-name{color:#e4bf7a}code[class*=language-] .token.variable,pre[class*=language-] .token.variable{color:#d19965}code[class*=language-] .token.regex,pre[class*=language-] .token.regex{color:#56b5c2}code[class*=language-] .token.important,pre[class*=language-] .token.important{color:#df6b75}code[class*=language-] .token.bold,code[class*=language-] .token.important,pre[class*=language-] .token.bold,pre[class*=language-] .token.important{font-weight:700}code[class*=language-] .token.italic,pre[class*=language-] .token.italic{font-style:italic}code[class*=language-] .token.entity,pre[class*=language-] .token.entity{cursor:help}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}.emoji{height:.8em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#aab1bf;background-color:#272b33;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#fff}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#7c869c}html body strong{color:#fff}html body del{color:#7c869c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#56b6c2;text-decoration:none}html body a:hover{color:#74c3cd;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#7c869c;background-color:#393f4a;border-left:4px solid #4b5261}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#4b5261;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#fff}html body table td,html body table th{border:1px solid #4b5261;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#fff;background-color:#393f4a;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#4b5261;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#fff;border:1px solid #4b5261;border-bottom:2px solid #3e4450;padding:2px 4px;background-color:#393f4a;border-radius:3px}@media print{html body{background-color:#272b33}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#fff;page-break-after:avoid}html body blockquote{color:#7c869c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}
+    /* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+    </style>
+    
+    <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+  </head>
+  <body for="html-export">
+    <div class="crossnote markdown-preview">
+    <html><head></head><body><div>
+<h1 id="-boats--streams--tcs-nqt-complete-master-guide" ebook-toc-level-1="" heading="🚣 BOATS &amp;amp; STREAMS — TCS NQT Complete Master Guide ">🚣 BOATS &amp; STREAMS — TCS NQT Complete Master Guide </h1>
+<h3 id="your-teacher--step-by-step-from-zero-to-hero-" ebook-toc-level-3="" heading="Your Teacher → Step-by-step from Zero to Hero 🚀 ">Your Teacher → Step-by-step from Zero to Hero 🚀 </h3>
+<hr>
+<h2 id="-table-of-contents" ebook-toc-level-2="" heading="📌 TABLE OF CONTENTS ">📌 TABLE OF CONTENTS </h2>
+<ol>
+<li>
+<p><a href="#1-core-concepts--definitions">Core Concepts &amp; Definitions</a></p>
+</li>
+<li>
+<p><a href="#2-all-formulas-at-a-glance">All Formulas at a Glance</a></p>
+</li>
+<li>
+<p><a href="#3-tips-tricks--shortcuts">Tips, Tricks &amp; Shortcuts</a></p>
+</li>
+<li>
+<p><a href="#method-1--downstream--upstream-speed">Method 1 — Downstream &amp; Upstream Speed</a></p>
+</li>
+<li>
+<p><a href="#method-2--find-b-and-r-from-d-and-u">Method 2 — Find B and R from D and U</a></p>
+</li>
+<li>
+<p><a href="#method-3--time-for-a-journey">Method 3 — Time for a Journey</a></p>
+</li>
+<li>
+<p><a href="#method-4--round-trip-problems">Method 4 — Round Trip Problems</a></p>
+</li>
+<li>
+<p><a href="#method-5--upstream-k-more-time-than-downstream">Method 5 — Upstream k× More Time Than Downstream</a></p>
+</li>
+<li>
+<p><a href="#method-6--distance-equation-with-total-time">Method 6 — Distance Equation with Total Time</a></p>
+</li>
+<li>
+<p><a href="#method-7--two-boats--meeting-problems">Method 7 — Two Boats / Meeting Problems</a></p>
+</li>
+<li>
+<p><a href="#-easy-mcqs-5-questions">🟢 Easy MCQs (5 Questions)</a></p>
+</li>
+<li>
+<p><a href="#-medium-mcqs-7-questions">🟡 Medium MCQs (7 Questions)</a></p>
+</li>
+<li>
+<p><a href="#-hard-mcqs-10-questions">🔴 Hard MCQs (10 Questions)</a></p>
+</li>
+<li>
+<p><a href="#-more-practice-problems">🧠 More Practice Problems</a></p>
+</li>
+<li>
+<p><a href="#-tcs-nqt-special-common-patterns">🎯 TCS NQT Special: Common Patterns</a></p>
+</li>
+</ol>
+<hr>
+<h2 id="1-core-concepts--definitions" ebook-toc-level-2="" heading="1. Core Concepts &amp;amp; Definitions ">1. Core Concepts &amp; Definitions </h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Symbol</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Speed in still water</strong></td>
+<td>B</td>
+<td>Boat's own speed with no current</td>
+</tr>
+<tr>
+<td><strong>Speed of stream</strong></td>
+<td>R</td>
+<td>Speed of the river current</td>
+</tr>
+<tr>
+<td><strong>Downstream speed</strong></td>
+<td>D</td>
+<td>Speed going WITH current (faster)</td>
+</tr>
+<tr>
+<td><strong>Upstream speed</strong></td>
+<td>U</td>
+<td>Speed going AGAINST current (slower)</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Core Rules:</strong></p>
+<ul>
+<li>D = B + R → current <strong>helps</strong> you downstream</li>
+<li>U = B − R → current <strong>opposes</strong> you upstream</li>
+<li>D &gt; U always (when R &gt; 0)</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="2-all-formulas-at-a-glance" ebook-toc-level-2="" heading="2. All Formulas at a Glance ">2. All Formulas at a Glance </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Downstream:       D = B + R
+Upstream:         U = B − R
+
+Still water:      B = (D + U) / 2
+Stream speed:     R = (D − U) / 2
+
+Time:             T = Distance / Speed
+
+Round trip:       T = d/D + d/U = d(D+U)/(D×U)
+
+Time ratio:       t_up : t_down = D : U  (same distance → inverse speeds)
+
+Long-form:        d/(B+R) + d/(B−R) = Total_time → solve for R or B
+</code></pre><blockquote>
+<p><strong>Golden Memory:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code> B = (D + U)/2       R = (D − U)/2
+</code></pre><p>B = <strong>average</strong> of D and U; R = <strong>half-difference</strong></p>
+</blockquote>
+<hr>
+<h2 id="3-tips-tricks--shortcuts" ebook-toc-level-2="" heading="3. Tips, Tricks &amp;amp; Shortcuts ">3. Tips, Tricks &amp; Shortcuts </h2>
+<h3 id="-trick-1--b--r-from-d--u-instantly" ebook-toc-level-3="" heading="⚡ Trick 1 — B &amp;amp; R from D &amp;amp; U instantly ">⚡ Trick 1 — B &amp; R from D &amp; U instantly </h3>
+<blockquote>
+<p>B = (D+U)/2 and R = (D−U)/2 ← Use this every single problem</p>
+</blockquote>
+<h3 id="-trick-2--same-distance-different-speeds" ebook-toc-level-3="" heading="⚡ Trick 2 — Same distance, different speeds ">⚡ Trick 2 — Same distance, different speeds </h3>
+<blockquote>
+<p>t_up/t_down = D/U (inverse of speeds)</p>
+</blockquote>
+<h3 id="-trick-3--upstream--k-downstream-time" ebook-toc-level-3="" heading="⚡ Trick 3 — Upstream = k× downstream time ">⚡ Trick 3 — Upstream = k× downstream time </h3>
+<blockquote>
+<p>U = D/k → B−R = (B+R)/k → solve to get <strong>R in terms of B</strong></p>
+</blockquote>
+<h3 id="-trick-4--round-trip-add-both-times" ebook-toc-level-3="" heading="⚡ Trick 4 — Round trip: add both times ">⚡ Trick 4 — Round trip: add both times </h3>
+<blockquote>
+<p>T = d/D + d/U → <strong>never</strong> 2d/average_speed!</p>
+</blockquote>
+<h3 id="-trick-5--product-formula-for-round-trip" ebook-toc-level-3="" heading="⚡ Trick 5 — Product formula for round trip ">⚡ Trick 5 — Product formula for round trip </h3>
+<blockquote>
+<p>T = 2dB/(B²−R²)</p>
+</blockquote>
+<h3 id="-trick-6--stream-speed-equation-setup" ebook-toc-level-3="" heading="⚡ Trick 6 — Stream speed equation setup ">⚡ Trick 6 — Stream speed equation setup </h3>
+<blockquote>
+<p>d/(B+R) + d/(B−R) = T → 2dB/(B²−R²) = T</p>
+</blockquote>
+<h3 id="-trick-7--two-boats-facing-each-other" ebook-toc-level-3="" heading="⚡ Trick 7 — Two boats facing each other ">⚡ Trick 7 — Two boats facing each other </h3>
+<blockquote>
+<p>Closing speed = sum of their effective speeds<br>
+Time = Total distance / Closing speed</p>
+</blockquote>
+<h3 id="-trick-8--distance-same-up-and-down" ebook-toc-level-3="" heading="⚡ Trick 8 — Distance same up and down ">⚡ Trick 8 — Distance same up and down </h3>
+<blockquote>
+<p>d = D×t₁ = U×t₂ → <strong>D×t₁ = U×t₂</strong></p>
+</blockquote>
+<hr>
+<h2 id="method-1--downstream--upstream-speed" ebook-toc-level-2="" heading="Method 1 — Downstream &amp;amp; Upstream Speed ">Method 1 — Downstream &amp; Upstream Speed </h2>
+<p><strong>Example 1:</strong> Boat speed = 15 km/hr, current = 3 km/hr.</p>
+<blockquote>
+<p>D = 18 km/hr, U = 12 km/hr ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> D = 20 km/hr, R = 5 km/hr. Find B and U.</p>
+<blockquote>
+<p>B = 20−5 = 15 km/hr; U = 15−5 = <strong>10 km/hr</strong> ✅</p>
+</blockquote>
+<p><strong>Example 3:</strong> A man rows 8 km/hr in still water. River at 2 km/hr.</p>
+<blockquote>
+<p>D = 10, U = 6 ✅</p>
+</blockquote>
+<p><strong>Example 4:</strong> D = 14, U = 6. Find B and R.</p>
+<blockquote>
+<p>B = <strong>10 km/hr</strong>, R = <strong>4 km/hr</strong> ✅</p>
+</blockquote>
+<hr>
+<h2 id="method-2--find-b-and-r-from-d-and-u" ebook-toc-level-2="" heading="Method 2 — Find B and R from D and U ">Method 2 — Find B and R from D and U </h2>
+<p><strong>Example 1:</strong> D = 18, U = 8. → B = 13, R = 5 ✅</p>
+<p><strong>Example 2:</strong> A boat covers 30 km downstream in 2 hrs and 18 km upstream in 3 hrs.</p>
+<blockquote>
+<p>D = 15, U = 6; B = <strong>10.5 km/hr</strong>, R = <strong>4.5 km/hr</strong> ✅</p>
+</blockquote>
+<p><strong>Example 3:</strong> Downstream = 24 km in 4 hrs; Upstream = 24 km in 6 hrs.</p>
+<blockquote>
+<p>D = 6, U = 4; B = <strong>5 km/hr</strong>, R = <strong>1 km/hr</strong> ✅</p>
+</blockquote>
+<hr>
+<h2 id="method-3--time-for-a-journey" ebook-toc-level-2="" heading="Method 3 — Time for a Journey ">Method 3 — Time for a Journey </h2>
+<p><strong>Example 1:</strong> B = 10, R = 2. Time for 48 km upstream?</p>
+<blockquote>
+<p>U = 8; T = 48/8 = <strong>6 hrs</strong> ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> B = 12, R = 4. Time for 64 km downstream?</p>
+<blockquote>
+<p>D = 16; T = 64/16 = <strong>4 hrs</strong> ✅</p>
+</blockquote>
+<p><strong>Example 3:</strong> A boatman rows against the stream 3 km in 1 hr and returns in 30 min.</p>
+<blockquote>
+<p>U = 3 km/hr; D = 3/0.5 = 6 km/hr<br>
+R = (6−3)/2 = <strong>1.5 km/hr</strong> ✅</p>
+</blockquote>
+<hr>
+<h2 id="method-4--round-trip-problems" ebook-toc-level-2="" heading="Method 4 — Round Trip Problems ">Method 4 — Round Trip Problems </h2>
+<p><strong>Example 1:</strong> B = 12, R = 4. Round trip 64 km each way?</p>
+<blockquote>
+<p>D = 16, U = 8; T = 64/16+64/8 = 4+8 = <strong>12 hrs</strong> ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> A &amp; B are 48 km apart. B = 10, R = 2.</p>
+<blockquote>
+<p>D=12, U=8; T = 48/12+48/8 = 4+6 = <strong>10 hrs</strong> ✅</p>
+</blockquote>
+<p><strong>Example 3:</strong> Man rows 6 km/hr in still water. River at 2 km/hr. 20 km each direction?</p>
+<blockquote>
+<p>D=8, U=4; T = 20/8+20/4 = 2.5+5 = <strong>7.5 hrs</strong> ✅</p>
+</blockquote>
+<hr>
+<h2 id="method-5--upstream-k-more-time-than-downstream" ebook-toc-level-2="" heading="Method 5 — Upstream k× More Time Than Downstream ">Method 5 — Upstream k× More Time Than Downstream </h2>
+<p><strong>Core Equation:</strong></p>
+<blockquote>
+<p>t_up = k × t_down → U = D/k → (B−R) = (B+R)/k</p>
+</blockquote>
+<p><strong>Example 1:</strong> Upstream takes 2× downstream time. B = 9 km/hr. Find R.</p>
+<blockquote>
+<p>B−R = (B+R)/2 → 2B−2R = B+R → B = 3R → R = 9/3 = <strong>3 km/hr</strong> ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> Upstream takes 3× downstream. B = 12 km/hr.</p>
+<blockquote>
+<p>B = 3/1 × 2R = ... → 3(B−R) = B+R → 3B−3R = B+R → 2B = 4R → R = B/2 = <strong>6 km/hr</strong> ✅</p>
+</blockquote>
+<p><strong>Example 3:</strong> Time ratio upstream:downstream = 5:3. B = 16 km/hr.</p>
+<blockquote>
+<p>U/D = 3/5 → U = 3k, D = 5k; B = 4k = 16 → k = 4<br>
+R = (D−U)/2 = (20−12)/2 = <strong>4 km/hr</strong> ✅</p>
+</blockquote>
+<hr>
+<h2 id="method-6--distance-equation-with-total-time" ebook-toc-level-2="" heading="Method 6 — Distance Equation with Total Time ">Method 6 — Distance Equation with Total Time </h2>
+<p><strong>Setup:</strong> d/(B+R) + d/(B−R) = T_total</p>
+<p><strong>Example 1:</strong> B = 7, d = 48 km both ways in 14 hrs. Find R.</p>
+<blockquote>
+<p>48/(7+R) + 48/(7−R) = 14 → 48×14/(49−R²) = 14 → 49−R² = 48 → <strong>R = 1 km/hr</strong> ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> B = 15, d = 30 km each way, total time = 4.5 hrs. Find R.</p>
+<blockquote>
+<p>30/(15+R)+30/(15−R) = 4.5 → 30×30/(225−R²) = 4.5<br>
+900 = 4.5(225−R²) → 225−R² = 200 → R² = 25 → <strong>R = 5 km/hr</strong> ✅</p>
+</blockquote>
+<p><strong>Example 3:</strong> Man takes 2 hrs more going 24 km upstream than downstream. B = 6 km/hr.</p>
+<blockquote>
+<p>24/(6−R) − 24/(6+R) = 2 → 48R/(36−R²) = 2 → 48R = 72−2R² → R = 1.5 km/hr ✅ <em>(approx)</em></p>
+</blockquote>
+<hr>
+<h2 id="method-7--two-boats--meeting-problems" ebook-toc-level-2="" heading="Method 7 — Two Boats / Meeting Problems ">Method 7 — Two Boats / Meeting Problems </h2>
+<p><strong>Example 1:</strong> Two boats from opposite ends 200 km apart. Boat A at 15 km/hr (downstream), Boat B at 25 km/hr (upstream). When do they meet?</p>
+<blockquote>
+<p>Closing speed = 15+25 = 40 ; T = 200/40 = <strong>5 hrs</strong> ✅; meeting point from A = 75 km ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> A and B start simultaneously from P and Q 96 km apart. B = 10/14 km/hr (still water), current = 2 km/hr.</p>
+<blockquote>
+<p>Effective speeds: A→B downstream = 12; B→A upstream = 12; Closing = 24; T = 96/24 = <strong>4 hrs</strong> ✅</p>
+</blockquote>
+<hr>
+<hr>
+<h1 id="-easy-mcqs-5-questions" ebook-toc-level-1="" heading="🟢 EASY MCQs (5 Questions) ">🟢 EASY MCQs (5 Questions) </h1>
+<hr>
+<h3 id="q1-boat-speed--7-kmhr-stream--1-kmhr-downstream-speed" ebook-toc-level-3="" heading="Q1. Boat speed = 7 km/hr, stream = 1 km/hr. Downstream speed? ">Q1. Boat speed = 7 km/hr, stream = 1 km/hr. Downstream speed? </h3>
+<ul>
+<li>(A) 6; (B) 7; (C) <strong>8</strong> ✅; (D) 9</li>
+</ul>
+<blockquote>
+<p>D = 7+1 = <strong>8 km/hr</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q2-d--16-u--10-still-water-speed" ebook-toc-level-3="" heading="Q2. D = 16, U = 10. Still water speed? ">Q2. D = 16, U = 10. Still water speed? </h3>
+<ul>
+<li>(A) 12; (B) <strong>13</strong> ✅; (C) 14; (D) 3</li>
+</ul>
+<blockquote>
+<p>B = (16+10)/2 = <strong>13 km/hr</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q3-boat-covers-24-km-downstream-in-3-hrs-downstream-speed" ebook-toc-level-3="" heading="Q3. Boat covers 24 km downstream in 3 hrs. Downstream speed? ">Q3. Boat covers 24 km downstream in 3 hrs. Downstream speed? </h3>
+<ul>
+<li>(A) 6; (B) 7; (C) <strong>8</strong> ✅; (D) 9</li>
+</ul>
+<blockquote>
+<p>24/3 = <strong>8 km/hr</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q4-b--10-r--2-time-for-48-km-upstream" ebook-toc-level-3="" heading="Q4. B = 10, R = 2. Time for 48 km upstream? ">Q4. B = 10, R = 2. Time for 48 km upstream? </h3>
+<ul>
+<li>(A) 4; (B) 5; (C) <strong>6</strong> ✅; (D) 8</li>
+</ul>
+<blockquote>
+<p>U=8; T=48/8=<strong>6 hrs</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q5-d--20-u--12-stream-speed" ebook-toc-level-3="" heading="Q5. D = 20, U = 12. Stream speed? ">Q5. D = 20, U = 12. Stream speed? </h3>
+<ul>
+<li>(A) <strong>4</strong> ✅; (B) 8; (C) 6; (D) 16</li>
+</ul>
+<blockquote>
+<p>R=(20−12)/2=<strong>4 km/hr</strong> ✅</p>
+</blockquote>
+<hr>
+<hr>
+<h1 id="-medium-mcqs-7-questions" ebook-toc-level-1="" heading="🟡 MEDIUM MCQs (7 Questions) ">🟡 MEDIUM MCQs (7 Questions) </h1>
+<hr>
+<h3 id="q6-boat-covers-72-km-downstream-in-6-hrs-60-km-upstream-in-10-hrs-b" ebook-toc-level-3="" heading="Q6. Boat covers 72 km downstream in 6 hrs, 60 km upstream in 10 hrs. B? ">Q6. Boat covers 72 km downstream in 6 hrs, 60 km upstream in 10 hrs. B? </h3>
+<ul>
+<li>(A) 8; (B) <strong>9</strong> ✅; (C) 10; (D) 7</li>
+</ul>
+<blockquote>
+<p>D=12, U=6; B=(12+6)/2=<strong>9 km/hr</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q7-man-rows-8-kmhr-in-still-water-upstream-takes-2-downstream-stream-speed" ebook-toc-level-3="" heading="Q7. Man rows 8 km/hr in still water. Upstream takes 2× downstream. Stream speed? ">Q7. Man rows 8 km/hr in still water. Upstream takes 2× downstream. Stream speed? </h3>
+<ul>
+<li>(A) 4/3; (B) <strong>8/3</strong> ✅; (C) 2; (D) 3</li>
+</ul>
+<blockquote>
+<p>B=3R → R=8/3 km/hr ✅</p>
+</blockquote>
+<hr>
+<h3 id="q8-b--10-r--2-saves-90-min-going-36-km-downstream-vs-upstream-verify" ebook-toc-level-3="" heading="Q8. B = 10, R = 2. Saves 90 min going 36 km downstream vs upstream. Verify? ">Q8. B = 10, R = 2. Saves 90 min going 36 km downstream vs upstream. Verify? </h3>
+<blockquote>
+<p>36/8−36/12 = 4.5−3 = 1.5 hrs = <strong>90 min</strong> ✅ → (A) 2 km/hr R already given ✅</p>
+</blockquote>
+<hr>
+<h3 id="q9-b--6-r--2-time-for-20-km-each-direction" ebook-toc-level-3="" heading="Q9. B = 6, R = 2. Time for 20 km each direction? ">Q9. B = 6, R = 2. Time for 20 km each direction? </h3>
+<ul>
+<li>(A) 6.25; (B) <strong>7.5</strong> ✅; (C) 8; (D) 9</li>
+</ul>
+<blockquote>
+<p>D=8, U=4; T=20/8+20/4=2.5+5=<strong>7.5 hrs</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q10-d19-u11-still-water-speed" ebook-toc-level-3="" heading="Q10. D=19, U=11. Still water speed? ">Q10. D=19, U=11. Still water speed? </h3>
+<ul>
+<li>(A) 12; (B) 13; (C) 14; (D) <strong>15</strong> ✅</li>
+</ul>
+<blockquote>
+<p>B=(19+11)/2=<strong>15 km/hr</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q11-upstream12-kmhr-downstream20-kmhr-round-trip-60-km-each" ebook-toc-level-3="" heading="Q11. Upstream=12 km/hr, downstream=20 km/hr. Round trip 60 km each? ">Q11. Upstream=12 km/hr, downstream=20 km/hr. Round trip 60 km each? </h3>
+<ul>
+<li>(A) <strong>10 hrs</strong> ✅; (B) 11; (C) 12; (D) 8</li>
+</ul>
+<blockquote>
+<p>T=60/20+60/12=3+5=<strong>8 hrs</strong> → <strong>(D)</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q12-b12-r4-total-time-for-40-km-round-trip" ebook-toc-level-3="" heading="Q12. B=12, R=4. Total time for 40 km round trip? ">Q12. B=12, R=4. Total time for 40 km round trip? </h3>
+<ul>
+<li>(A) 5; (B) 6; (C) <strong>6.67</strong> ✅; (D) 7</li>
+</ul>
+<blockquote>
+<p>D=16, U=8; T=40/16+40/8=2.5+5=<strong>7.5</strong> → <strong>(D) 7</strong> closest ✅</p>
+</blockquote>
+<hr>
+<hr>
+<h1 id="-hard-mcqs-10-questions" ebook-toc-level-1="" heading="🔴 HARD MCQs (10 Questions) ">🔴 HARD MCQs (10 Questions) </h1>
+<hr>
+<h3 id="q13-downstream-in-1-hr-upstream-in-15-hr-same-distance-b12-r" ebook-toc-level-3="" heading="Q13. Downstream in 1 hr, upstream in 1.5 hr same distance. B=12. R? ">Q13. Downstream in 1 hr, upstream in 1.5 hr same distance. B=12. R? </h3>
+<ul>
+<li>(A) 2; (B) <strong>2.4</strong> ✅; (C) 3; (D) 4</li>
+</ul>
+<blockquote>
+<p>d=B+R=12+R; d=1.5(12−R) → 12+R=18−1.5R → 2.5R=6 → <strong>R=2.4</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q14-b7-48-km-both-ways-in-14-hrs-r" ebook-toc-level-3="" heading="Q14. B=7, 48 km both ways in 14 hrs. R? ">Q14. B=7, 48 km both ways in 14 hrs. R? </h3>
+<ul>
+<li>(A) 0.5; (B) <strong>1</strong> ✅; (C) 1.5; (D) 2</li>
+</ul>
+<blockquote>
+<p>2×7×48/(49−R²)=14 → 49−R²=48 → <strong>R=1</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q15-a-rows-13-km-upstream-and-28-km-downstream-in-5-hrs-each-r" ebook-toc-level-3="" heading="Q15. A rows 13 km upstream and 28 km downstream in 5 hrs each. R? ">Q15. A rows 13 km upstream and 28 km downstream in 5 hrs each. R? </h3>
+<ul>
+<li>(A) <strong>1.5</strong> ✅; (B) 2; (C) 1; (D) 2.5</li>
+</ul>
+<blockquote>
+<p>U=2.6, D=5.6; R=(5.6−2.6)/2=<strong>1.5</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q16-du--74-same-time-br" ebook-toc-level-3="" heading="Q16. D/U = 7/4 (same time). B:R? ">Q16. D/U = 7/4 (same time). B:R? </h3>
+<ul>
+<li>(A) <strong>11:3</strong> ✅; (B) 11:5; (C) 11:4; (D) 7:4</li>
+</ul>
+<blockquote>
+<p>D=7k, U=4k; B=11k/2, R=3k/2 → <strong>B:R=11:3</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q17-b15-30-km-round-trip-in-45-hrs-r" ebook-toc-level-3="" heading="Q17. B=15, 30 km round trip in 4.5 hrs. R? ">Q17. B=15, 30 km round trip in 4.5 hrs. R? </h3>
+<ul>
+<li>(A) <strong>5</strong> ✅; (B) 6; (C) 3; (D) 4</li>
+</ul>
+<blockquote>
+<p>900=4.5(225−R²) → R²=25 → <strong>R=5</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q18-d6-u4-50-km-in-still-water" ebook-toc-level-3="" heading="Q18. D=6, U=4. 50 km in still water? ">Q18. D=6, U=4. 50 km in still water? </h3>
+<ul>
+<li>(A) 8; (B) <strong>10</strong> ✅; (C) 12; (D) 14</li>
+</ul>
+<blockquote>
+<p>B=5; T=50/5=<strong>10 hrs</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q19-upstream-takes-3-downstream-b12-kmhr-r" ebook-toc-level-3="" heading="Q19. Upstream takes 3× downstream. B=12 km/hr. R? ">Q19. Upstream takes 3× downstream. B=12 km/hr. R? </h3>
+<ul>
+<li>(A) 4; (B) 5; (C) <strong>6</strong> ✅; (D) 8</li>
+</ul>
+<blockquote>
+<p>2B=4R → R=B/2=<strong>6</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q20-d3666-u3694-still-water-speed" ebook-toc-level-3="" heading="Q20. D=36/6=6, U=36/9=4. Still water speed? ">Q20. D=36/6=6, U=36/9=4. Still water speed? </h3>
+<ul>
+<li>(A) <strong>5</strong> ✅; (B) 5.5; (C) 6; (D) 7</li>
+</ul>
+<blockquote>
+<p>B=(6+4)/2=<strong>5 km/hr</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q21-u6-d10-time-ratio-upstreamdownstream-same-dist" ebook-toc-level-3="" heading="Q21. U=6, D=10. Time ratio upstream:downstream same dist? ">Q21. U=6, D=10. Time ratio upstream:downstream same dist? </h3>
+<ul>
+<li>(A) 4:3; (B) 3:4; (C) <strong>5:3</strong> ✅; (D) 3:5</li>
+</ul>
+<blockquote>
+<p>Ratio = D:U = 10:6 = <strong>5:3</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q22-br71-d24-kmhr-upstream-speed" ebook-toc-level-3="" heading="Q22. B:R=7:1, D=24 km/hr. Upstream speed? ">Q22. B:R=7:1, D=24 km/hr. Upstream speed? </h3>
+<ul>
+<li>(A) 10; (B) 12; (C) <strong>18</strong> ✅; (D) 16</li>
+</ul>
+<blockquote>
+<p>B+R=24; B=7R → R=3, B=21; U=21−3=<strong>18</strong> ✅</p>
+</blockquote>
+<hr>
+<hr>
+<h1 id="-more-practice-problems" ebook-toc-level-1="" heading="🧠 More Practice Problems ">🧠 More Practice Problems </h1>
+<p><strong>P1.</strong> B=8, R=2 → D=10, U=6 ✅<br>
+<strong>P2.</strong> D=15, U=9 → B=12, R=3 ✅<br>
+<strong>P3.</strong> 20 km D in 2 hrs → D=10 km/hr ✅<br>
+<strong>P4.</strong> B=10, R=3 → U=7; 91 km upstream = <strong>13 hrs</strong> ✅<br>
+<strong>P5.</strong> D=18, U=6; 54 km round trip = 54/18+54/6=3+9=<strong>12 hrs</strong> ✅<br>
+<strong>P6.</strong> t_up=2t_down, B=12 → R=4 km/hr ✅<br>
+<strong>P7.</strong> 24km D in 3hr, 18km U in 3hr → D=8, U=6; B=7, R=1 ✅<br>
+<strong>P8.</strong> B=15, R=3; 60km upstream = 60/12=<strong>5 hrs</strong> ✅<br>
+<strong>P9.</strong> 40km U in 5hr, 40km D in 4hr → U=8, D=10; B=9 ✅<br>
+<strong>P10.</strong> t_up:t_down=3:1 → R/B=1/2; stream:still=<strong>1:2</strong> ✅</p>
+<hr>
+<hr>
+<h1 id="-tcs-nqt-special-common-patterns" ebook-toc-level-1="" heading="🎯 TCS NQT Special: Common Patterns ">🎯 TCS NQT Special: Common Patterns </h1>
+<h2 id="pattern-1--find-d-and-u-from-b-and-r--dbr-ubr" ebook-toc-level-2="" heading="Pattern 1 — &quot;Find D and U from B and R&quot; → D=B+R, U=B−R ">Pattern 1 — "Find D and U from B and R" → D=B+R, U=B−R </h2>
+<h2 id="pattern-2--find-b-and-r-from-d-and-u--bdu2-rdu2" ebook-toc-level-2="" heading="Pattern 2 — &quot;Find B and R from D and U&quot; → B=(D+U)/2, R=(D−U)/2 ">Pattern 2 — "Find B and R from D and U" → B=(D+U)/2, R=(D−U)/2 </h2>
+<h2 id="pattern-3--time-for-journey--tdspeed-use-correct-speed" ebook-toc-level-2="" heading="Pattern 3 — &quot;Time for journey&quot; → T=d/speed (use correct speed!) ">Pattern 3 — "Time for journey" → T=d/speed (use correct speed!) </h2>
+<h2 id="pattern-4--round-trip-total-time--tdd--du" ebook-toc-level-2="" heading="Pattern 4 — &quot;Round trip total time&quot; → T=d/D + d/U ">Pattern 4 — "Round trip total time" → T=d/D + d/U </h2>
+<h2 id="pattern-5--upstream-k-more-time--set-up-brbrk" ebook-toc-level-2="" heading="Pattern 5 — &quot;Upstream k× more time&quot; → set up B−R=(B+R)/k ">Pattern 5 — "Upstream k× more time" → set up B−R=(B+R)/k </h2>
+<h2 id="pattern-6--total-time-equation--dbr--dbr--t" ebook-toc-level-2="" heading="Pattern 6 — &quot;Total time equation&quot; → d/(B+R) + d/(B−R) = T ">Pattern 6 — "Total time equation" → d/(B+R) + d/(B−R) = T </h2>
+<h2 id="pattern-7--two-boats-facing-each-other--add-effective-speeds" ebook-toc-level-2="" heading="Pattern 7 — &quot;Two boats facing each other&quot; → add effective speeds ">Pattern 7 — "Two boats facing each other" → add effective speeds </h2>
+<hr>
+<h2 id="-common-mistakes-to-avoid" ebook-toc-level-2="" heading="🚀 Common Mistakes to AVOID ">🚀 Common Mistakes to AVOID </h2>
+<table>
+<thead>
+<tr>
+<th>Mistake ❌</th>
+<th>Correct ✅</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>D = B − R</td>
+<td>D = <strong>B + R</strong></td>
+</tr>
+<tr>
+<td>B = D − U</td>
+<td>B = <strong>(D+U)/2</strong></td>
+</tr>
+<tr>
+<td>Round trip = 2d / avg_speed</td>
+<td><strong>T = d/D + d/U</strong></td>
+</tr>
+<tr>
+<td>t_up = t_down (same distance)</td>
+<td>t_up <strong>&gt;</strong> t_down</td>
+</tr>
+<tr>
+<td>R = D + U</td>
+<td>R = <strong>(D−U)/2</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-quick-revision-summary" ebook-toc-level-2="" heading="📘 Quick Revision Summary ">📘 Quick Revision Summary </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>D = B+R       U = B−R
+B = (D+U)/2   R = (D−U)/2
+
+Round trip T = d/D + d/U
+
+k× time upstream: B = kR (when k=3, B=3R → R=B/3)
+quadratic:  d/(B+R) + d/(B−R) = T → 2dB/(B²−R²)=T
+</code></pre><blockquote>
+<p><strong>🔗 Next → 11_Train_Problems.md</strong> | Same relative speed concept!</p>
+</blockquote>
+<hr>
+<p><em>Guide created for TCS NQT Preparation | All methods, formulas, and MCQs from simple to advanced</em></p>
+</div></body></html>
+    </div>
+  </body>
+</html>

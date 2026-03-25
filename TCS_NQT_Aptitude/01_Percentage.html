@@ -1,0 +1,873 @@
+<!DOCTYPE html><html><head>
+      <title>01_Percentage</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\Arun E\.antigravity\extensions\shd101wyy.markdown-preview-enhanced-0.8.22-universal\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="-percentage--tcs-nqt-complete-master-guide">📊 PERCENTAGE — TCS NQT Complete Master Guide </h1>
+<h3 id="your-teacher--step-by-step-from-zero-to-hero-">Your Teacher → Step-by-step from Zero to Hero 🚀 </h3>
+<hr>
+<h2 id="-table-of-contents">📌 TABLE OF CONTENTS </h2>
+<ol>
+<li><a href="#1-what-is-percentage">What is Percentage?</a></li>
+<li><a href="#2-core-formulas--methods">Core Formulas &amp; Methods</a></li>
+<li><a href="#3-fraction--percentage-conversion-table">Fraction ↔ Percentage Conversion Table</a></li>
+<li><a href="#4-tips-tricks--shortcuts">Tips, Tricks &amp; Shortcuts</a></li>
+<li><a href="#method-1--basic--calculation">Method 1 — Basic % Calculation</a></li>
+<li><a href="#method-2--increase--decrease">Method 2 — % Increase / Decrease</a></li>
+<li><a href="#method-3--successive--change">Method 3 — Successive % Change</a></li>
+<li><a href="#method-4--of-a--two-step-">Method 4 — % of a % (Two-step %)</a></li>
+<li><a href="#method-5--comparison--ratio-to-">Method 5 — % Comparison &amp; Ratio-to-%</a></li>
+<li><a href="#method-6--population--depreciation">Method 6 — Population &amp; Depreciation</a></li>
+<li><a href="#method-7--marks--exam-problems">Method 7 — Marks &amp; Exam Problems</a></li>
+<li><a href="#-easy-mcqs-5-questions">🟢 Easy MCQs (5 Questions)</a></li>
+<li><a href="#-medium-mcqs-7-questions">🟡 Medium MCQs (7 Questions)</a></li>
+<li><a href="#-hard-mcqs-10-questions">🔴 Hard MCQs (10 Questions)</a></li>
+<li><a href="#-more-practice-problems">🧠 More Practice Problems</a></li>
+<li><a href="#-tcs-nqt-special-common-question-patterns">TCS NQT Special: Common Question Patterns</a></li>
+</ol>
+<hr>
+<h2 id="1-what-is-percentage">1. What is Percentage? </h2>
+<blockquote>
+<p><strong>Percentage</strong> means <strong>"per hundred"</strong> — Latin: <em>per centum</em>.</p>
+<p>So <strong>50%</strong> simply means <strong>50 out of 100</strong>.</p>
+</blockquote>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Percentage</mtext><mo>=</mo><mfrac><mtext>Part</mtext><mtext>Whole</mtext></mfrac><mo>×</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">\text{Percentage} = \frac{\text{Part}}{\text{Whole}} \times 100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">Percentage</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.0463em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3603em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">Whole</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">Part</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">100</span></span></span></span></span></p>
+<p><strong>Example:</strong> In a class of 40 students, 10 passed. What % passed?<br>
+<span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>=</mo><mfrac><mn>10</mn><mn>40</mn></mfrac><mo>×</mo><mn>100</mn><mo>=</mo><mn>25</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">= \frac{10}{40} \times 100 = 25\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.0074em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3214em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">40</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">10</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">100</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">25%</span></span></span></span></span></p>
+<hr>
+<h2 id="2-core-formulas--methods">2. Core Formulas &amp; Methods </h2>
+<table>
+<thead>
+<tr>
+<th>Formula</th>
+<th>Use When...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>% = (Part / Whole) × 100</code></td>
+<td>Finding what % one number is of another</td>
+</tr>
+<tr>
+<td><code>Part = (% / 100) × Whole</code></td>
+<td>Finding the actual value</td>
+</tr>
+<tr>
+<td><code>Whole = Part × (100 / %)</code></td>
+<td>Finding the original total</td>
+</tr>
+<tr>
+<td><code>New = Original × (1 + r/100)</code></td>
+<td>Increase by r%</td>
+</tr>
+<tr>
+<td><code>New = Original × (1 - r/100)</code></td>
+<td>Decrease by r%</td>
+</tr>
+<tr>
+<td><code>% Change = (Change / Original) × 100</code></td>
+<td>Finding % increase or decrease</td>
+</tr>
+<tr>
+<td><code>Net % = a + b + ab/100</code></td>
+<td>Two successive % changes</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="3-fraction--percentage-conversion-table">3. Fraction ↔ Percentage Conversion Table </h2>
+<blockquote>
+<p><strong>🔑 Memorize this table — it saves 30–40 seconds per question in TCS NQT!</strong></p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Fraction</th>
+<th>Percentage</th>
+<th>Decimal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1/2</td>
+<td>50%</td>
+<td>0.5</td>
+</tr>
+<tr>
+<td>1/3</td>
+<td>33.33%</td>
+<td>0.333</td>
+</tr>
+<tr>
+<td>2/3</td>
+<td>66.66%</td>
+<td>0.666</td>
+</tr>
+<tr>
+<td>1/4</td>
+<td>25%</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>3/4</td>
+<td>75%</td>
+<td>0.75</td>
+</tr>
+<tr>
+<td>1/5</td>
+<td>20%</td>
+<td>0.20</td>
+</tr>
+<tr>
+<td>2/5</td>
+<td>40%</td>
+<td>0.40</td>
+</tr>
+<tr>
+<td>3/5</td>
+<td>60%</td>
+<td>0.60</td>
+</tr>
+<tr>
+<td>4/5</td>
+<td>80%</td>
+<td>0.80</td>
+</tr>
+<tr>
+<td>1/6</td>
+<td>16.66%</td>
+<td>0.1666</td>
+</tr>
+<tr>
+<td>5/6</td>
+<td>83.33%</td>
+<td>0.8333</td>
+</tr>
+<tr>
+<td>1/7</td>
+<td>14.28%</td>
+<td>0.1428</td>
+</tr>
+<tr>
+<td>1/8</td>
+<td>12.5%</td>
+<td>0.125</td>
+</tr>
+<tr>
+<td>3/8</td>
+<td>37.5%</td>
+<td>0.375</td>
+</tr>
+<tr>
+<td>5/8</td>
+<td>62.5%</td>
+<td>0.625</td>
+</tr>
+<tr>
+<td>7/8</td>
+<td>87.5%</td>
+<td>0.875</td>
+</tr>
+<tr>
+<td>1/9</td>
+<td>11.11%</td>
+<td>0.1111</td>
+</tr>
+<tr>
+<td>1/10</td>
+<td>10%</td>
+<td>0.10</td>
+</tr>
+<tr>
+<td>1/11</td>
+<td>9.09%</td>
+<td>0.0909</td>
+</tr>
+<tr>
+<td>1/12</td>
+<td>8.33%</td>
+<td>0.083</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-tips-tricks--shortcuts">4. Tips, Tricks &amp; Shortcuts </h2>
+<h3 id="-trick-1--x-of-y--y-of-x">⚡ Trick 1 — "x% of y = y% of x" </h3>
+<blockquote>
+<p><strong>25% of 80 = 80% of 25 = 20</strong> ✅ (Pick whichever is easier to calculate!)</p>
+</blockquote>
+<h3 id="-trick-2--finding--quickly-using-10">⚡ Trick 2 — Finding % quickly using 10% </h3>
+<blockquote>
+<p>To find 35% of 460:</p>
+<ul>
+<li>10% of 460 = 46</li>
+<li>30% = 3 × 46 = 138</li>
+<li>5% = 46/2 = 23</li>
+<li>35% = 138 + 23 = <strong>161</strong> ✅</li>
+</ul>
+</blockquote>
+<h3 id="-trick-3--successive--using-net-formula">⚡ Trick 3 — Successive % using Net formula </h3>
+<blockquote>
+<p>Price increased by 20% and then 10%:<br>
+Net % = 20 + 10 + (20×10)/100 = 30 + 2 = <strong>32%</strong> ✅ (not 30%!)</p>
+</blockquote>
+<h3 id="-trick-4---decrease-to-recover-original">⚡ Trick 4 — % Decrease to recover original </h3>
+<blockquote>
+<p>If something decreases by R%, to recover you need to <strong>increase by</strong> <code>R/(100-R) × 100 %</code><br>
+Example: Salary cut by 20% → need <strong>25% hike</strong> to recover original (20/80 × 100 = 25%)</p>
+</blockquote>
+<h3 id="-trick-5--population-problems-multiply-factors">⚡ Trick 5 — Population problems: Multiply factors </h3>
+<blockquote>
+<p>Population = P × (1 + r1/100) × (1 - r2/100) × ...<br>
+Just chain-multiply the factors!</p>
+</blockquote>
+<h3 id="-trick-6--quick-division-for--change">⚡ Trick 6 — Quick Division for % Change </h3>
+<blockquote>
+<p>"A is what % more than B?" → <code>(A-B)/B × 100</code><br>
+"A is what % less than B?" → <code>(B-A)/B × 100</code><br>
+<strong>⚠️ Always divide by the BASE (the reference/original value)!</strong></p>
+</blockquote>
+<h3 id="-trick-7--two-candidates-election-trick">⚡ Trick 7 — Two candidates election trick </h3>
+<blockquote>
+<p>If one candidate gets x% of votes and wins by N votes:<br>
+Winner gets x%, loser gets (100-x)%<br>
+Difference % = (2x - 100)%<br>
+Total votes = N / (2x - 100) × 100</p>
+</blockquote>
+<hr>
+<h2 id="method-1--basic--calculation">Method 1 — Basic % Calculation </h2>
+<p><strong>Concept:</strong> Convert percentages into fractions or use proportions.</p>
+<p><strong>Formula:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Part = (Percentage / 100) × Whole
+Percentage = (Part / Whole) × 100
+Whole = Part × 100 / Percentage
+</code></pre><p><strong>Example 1:</strong> What is 15% of 240?</p>
+<blockquote>
+<p>= (15/100) × 240 = 0.15 × 240 = <strong>36</strong> ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> 45 is what percent of 180?</p>
+<blockquote>
+<p>= (45/180) × 100 = 0.25 × 100 = <strong>25%</strong> ✅</p>
+</blockquote>
+<p><strong>Example 3:</strong> 30% of what number is 72?</p>
+<blockquote>
+<p>= 72 × (100/30) = 72 × 10/3 = <strong>240</strong> ✅</p>
+</blockquote>
+<hr>
+<h2 id="method-2---increase--decrease">Method 2 — % Increase / Decrease </h2>
+<p><strong>Formula:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>% Increase = (New - Old) / Old × 100
+% Decrease = (Old - New) / Old × 100
+New Value after R% increase  = Old × (100 + R) / 100
+New Value after R% decrease  = Old × (100 - R) / 100
+</code></pre><p><strong>Example 1:</strong> Price rose from ₹400 to ₹480. Find % increase.</p>
+<blockquote>
+<p>= (480 - 400)/400 × 100 = 80/400 × 100 = <strong>20%</strong> ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> A number is decreased by 25%. It becomes 150. Find original.</p>
+<blockquote>
+<p>150 = Original × (75/100)<br>
+Original = 150 × 100/75 = <strong>200</strong> ✅</p>
+</blockquote>
+<p><strong>Example 3 — TRAP QUESTION:</strong> If A is 20% more than B, by what % is B less than A?</p>
+<blockquote>
+<p>A = 1.2B → B = A/1.2 = 5A/6<br>
+B is less than A by: (A - 5A/6)/A × 100 = (A/6)/A × 100 = <strong>16.67%</strong> ✅<br>
+<em>(NOT 20% — This is a very common TCS NQT trap!)</em></p>
+</blockquote>
+<hr>
+<h2 id="method-3--successive--change">Method 3 — Successive % Change </h2>
+<p><strong>Formula (Two changes a% and b%):</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Net % Change = a + b + (a × b) / 100
+</code></pre><blockquote>
+<p>Note: Use <strong>negative</strong> values for decreases!</p>
+</blockquote>
+<p><strong>Example 1:</strong> A number is first increased by 30%, then decreased by 20%. Net change?</p>
+<blockquote>
+<p>= 30 + (-20) + (30 × -20)/100<br>
+= 10 - 6 = <strong>+4%</strong> (overall increase of 4%) ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> Price increased by 10%, then again by 10%. Find net % increase.</p>
+<blockquote>
+<p>= 10 + 10 + (10×10)/100 = 20 + 1 = <strong>21%</strong> ✅</p>
+</blockquote>
+<p><strong>Example 3:</strong> A's salary was cut by 40%, then increased by 40%. Net change?</p>
+<blockquote>
+<p>= -40 + 40 + (-40 × 40)/100 = 0 - 16 = <strong>-16%</strong> (he is at a loss of 16%) ✅</p>
+</blockquote>
+<hr>
+<h2 id="method-4---of-a--two-step-">Method 4 — % of a % (Two-step %) </h2>
+<p><strong>Concept:</strong> Convert each % to a fraction and multiply.</p>
+<p><strong>Example 1:</strong> Find 20% of 30% of 500.</p>
+<blockquote>
+<p>= (20/100) × (30/100) × 500<br>
+= 0.20 × 0.30 × 500 = 0.06 × 500 = <strong>30</strong> ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> A article's price is first reduced by 10% and then by a further 10% of the reduced price. Overall reduction?</p>
+<blockquote>
+<p>Original = 100<br>
+After 1st: 100 × 0.90 = 90<br>
+After 2nd: 90 × 0.90 = 81<br>
+Reduction = 100 - 81 = <strong>19%</strong> ✅</p>
+</blockquote>
+<hr>
+<h2 id="method-5---comparison--ratio-to-">Method 5 — % Comparison &amp; Ratio-to-% </h2>
+<p><strong>Concept:</strong> Express ratios as percentages, or compare two quantities.</p>
+<p><strong>Formula:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>If ratio is a : b
+a% of total = a/(a+b) × 100
+b% of total = b/(a+b) × 100
+</code></pre><p><strong>Example 1:</strong> In a mixture of milk and water in ratio 3:2, what % is milk?</p>
+<blockquote>
+<p>= 3/(3+2) × 100 = 3/5 × 100 = <strong>60%</strong> ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> A is 25% of B. What % of A is B?</p>
+<blockquote>
+<p>A = 0.25B → B = A/0.25 = 4A<br>
+B is 400% of A → B is <strong>300% more</strong> than A ✅</p>
+</blockquote>
+<hr>
+<h2 id="method-6--population--depreciation">Method 6 — Population &amp; Depreciation </h2>
+<p><strong>Formula:</strong></p>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>After n years:
+Value = P × (1 + r/100)ⁿ   [Growth]
+Value = P × (1 - r/100)ⁿ   [Depreciation]
+</code></pre><p><strong>Example 1:</strong> A town's population is 50,000. It grows at 4% p.a. Find population after 2 years.</p>
+<blockquote>
+<p>= 50000 × (1.04)² = 50000 × 1.0816 = <strong>54,080</strong> ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> A machine costs ₹80,000, depreciates at 10% p.a. Value after 3 years?</p>
+<blockquote>
+<p>= 80000 × (0.9)³ = 80000 × 0.729 = <strong>₹58,320</strong> ✅</p>
+</blockquote>
+<p><strong>Example 3:</strong> Population increases 5% in year 1 and decreases 3% in year 2. If current = 40000, find after 2 years.</p>
+<blockquote>
+<p>= 40000 × 1.05 × 0.97 = 40000 × 1.0185 = <strong>40,740</strong> ✅</p>
+</blockquote>
+<hr>
+<h2 id="method-7--marks--exam-problems">Method 7 — Marks &amp; Exam Problems </h2>
+<p><strong>Classic TCS NQT Exam Pattern!</strong></p>
+<p><strong>Example 1:</strong> A student scored 75% in an exam and got 450 marks. Total marks?</p>
+<blockquote>
+<p>450 = 75% of T → T = 450 × 100/75 = <strong>600</strong> ✅</p>
+</blockquote>
+<p><strong>Example 2:</strong> Pass marks = 40%. A student got 185 marks, failed by 15. Find max marks.</p>
+<blockquote>
+<p>Pass marks = 185 + 15 = 200<br>
+40% of Max = 200 → Max = 200 × 100/40 = <strong>500</strong> ✅</p>
+</blockquote>
+<p><strong>Example 3:</strong> A student who gets 30% fails by 10 marks. Another who gets 40% gets 15 more than the minimum. Find max marks.</p>
+<blockquote>
+<p>Let max = M<br>
+0.3M + 10 = 0.4M - 15<br>
+25 = 0.1M → M = <strong>250</strong> ✅</p>
+</blockquote>
+<hr>
+<hr>
+<h1 id="-easy-mcqs-5-questions">🟢 EASY MCQs (5 Questions) </h1>
+<hr>
+<h3 id="q1-what-is-12-of-650">Q1. What is 12% of 650? </h3>
+<ul>
+<li>(A) 78</li>
+<li>(B) 72</li>
+<li>(C) 68</li>
+<li>(D) 75</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (A) 78</strong><br>
+<strong>Solution:</strong><br>
+12% of 650 = (12/100) × 650 = 0.12 × 650 = <strong>78</strong><br>
+<em>Shortcut: 10% of 650 = 65, 2% of 650 = 13 → 65+13=78</em></p>
+</blockquote>
+<hr>
+<h3 id="q2-if-25-of-a-number-is-75-what-is-the-number">Q2. If 25% of a number is 75, what is the number? </h3>
+<ul>
+<li>(A) 250</li>
+<li>(B) 300</li>
+<li>(C) 350</li>
+<li>(D) 400</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (B) 300</strong><br>
+<strong>Solution:</strong><br>
+25% × N = 75<br>
+N = 75 × (100/25) = 75 × 4 = <strong>300</strong></p>
+</blockquote>
+<hr>
+<h3 id="q3-what-percent-of-80-is-20">Q3. What percent of 80 is 20? </h3>
+<ul>
+<li>(A) 20%</li>
+<li>(B) 25%</li>
+<li>(C) 30%</li>
+<li>(D) 40%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (B) 25%</strong><br>
+<strong>Solution:</strong><br>
+(20/80) × 100 = 0.25 × 100 = <strong>25%</strong><br>
+<em>Fraction: 20/80 = 1/4 = 25%</em> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q4-a-price-increases-from-200-to-250-what-is-the--increase">Q4. A price increases from ₹200 to ₹250. What is the % increase? </h3>
+<ul>
+<li>(A) 20%</li>
+<li>(B) 25%</li>
+<li>(C) 30%</li>
+<li>(D) 50%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (B) 25%</strong><br>
+<strong>Solution:</strong><br>
+% increase = (250 - 200)/200 × 100 = 50/200 × 100 = <strong>25%</strong></p>
+</blockquote>
+<hr>
+<h3 id="q5-a-student-scored-360-marks-out-of-600-what-percentage-did-he-score">Q5. A student scored 360 marks out of 600. What percentage did he score? </h3>
+<ul>
+<li>(A) 55%</li>
+<li>(B) 60%</li>
+<li>(C) 65%</li>
+<li>(D) 70%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (B) 60%</strong><br>
+<strong>Solution:</strong><br>
+(360/600) × 100 = 0.6 × 100 = <strong>60%</strong></p>
+</blockquote>
+<hr>
+<hr>
+<h1 id="-medium-mcqs-7-questions">🟡 MEDIUM MCQs (7 Questions) </h1>
+<hr>
+<h3 id="q6-a-number-is-increased-by-20-and-then-decreased-by-20-the-net-change-is">Q6. A number is increased by 20% and then decreased by 20%. The net change is: </h3>
+<ul>
+<li>(A) 0%</li>
+<li>(B) -4%</li>
+<li>(C) +4%</li>
+<li>(D) -2%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (B) -4%</strong><br>
+<strong>Solution (using net % formula):</strong><br>
+Net % = 20 + (-20) + (20 × -20)/100 = 0 - 4 = <strong>-4%</strong><br>
+<em>Verify: 100 → ×1.2 = 120 → ×0.8 = 96 → loss of 4%</em> ✅<br>
+<em>(TCS NQT TRAP — students often say 0%!)</em></p>
+</blockquote>
+<hr>
+<h3 id="q7-in-an-election-candidate-a-got-55-of-valid-votes-total-valid-votes--8000-candidate-b-got-rest-by-how-many-votes-did-a-win">Q7. In an election, candidate A got 55% of valid votes. Total valid votes = 8000. Candidate B got rest. By how many votes did A win? </h3>
+<ul>
+<li>(A) 600</li>
+<li>(B) 800</li>
+<li>(C) 900</li>
+<li>(D) 1000</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (B) 800</strong><br>
+<strong>Solution:</strong><br>
+A got = 55% of 8000 = 4400 votes<br>
+B got = 45% of 8000 = 3600 votes<br>
+Difference = 4400 - 3600 = <strong>800</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q8-if-a-is-40-more-than-b-then-b-is-what--less-than-a">Q8. If A is 40% more than B, then B is what % less than A? </h3>
+<ul>
+<li>(A) 40%</li>
+<li>(B) 28.57%</li>
+<li>(C) 33.33%</li>
+<li>(D) 30%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (B) 28.57%</strong><br>
+<strong>Solution:</strong><br>
+A = 1.40 B → B = A / 1.40 = 5A/7<br>
+B is less than A by: (A - 5A/7)/A × 100 = (2A/7)/A × 100 = 2/7 × 100 = <strong>28.57%</strong><br>
+<em>(TCS NQT favourite trap — answer is NOT 40%!)</em></p>
+</blockquote>
+<hr>
+<h3 id="q9-the-population-of-a-city-is-100000-if-it-increases-at-5-pa-what-will-it-be-after-2-years">Q9. The population of a city is 1,00,000. If it increases at 5% p.a., what will it be after 2 years? </h3>
+<ul>
+<li>(A) 1,10,000</li>
+<li>(B) 1,10,250</li>
+<li>(C) 1,05,000</li>
+<li>(D) 1,02,500</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (B) 1,10,250</strong><br>
+<strong>Solution:</strong><br>
+P = 1,00,000 × (1.05)²<br>
+= 1,00,000 × 1.1025 = <strong>1,10,250</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q10-a-student-needs-40-to-pass-he-gets-200-marks-and-fails-by-40-marks-what-are-the-maximum-marks">Q10. A student needs 40% to pass. He gets 200 marks and fails by 40 marks. What are the maximum marks? </h3>
+<ul>
+<li>(A) 550</li>
+<li>(B) 600</li>
+<li>(C) 650</li>
+<li>(D) 700</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (B) 600</strong><br>
+<strong>Solution:</strong><br>
+Pass marks = 200 + 40 = 240<br>
+40% of Max = 240<br>
+Max = 240 × 100/40 = <strong>600</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q11-two-successive-discounts-of-20-and-10-are-given-on-an-item-what-is-the-net-discount">Q11. Two successive discounts of 20% and 10% are given on an item. What is the net discount? </h3>
+<ul>
+<li>(A) 28%</li>
+<li>(B) 30%</li>
+<li>(C) 25%</li>
+<li>(D) 32%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (A) 28%</strong><br>
+<strong>Solution:</strong><br>
+Net % = -20 + (-10) + (-20 × -10)/100 = -30 + 2 = <strong>-28%</strong><br>
+<em>Verify: SP = 100 × 0.8 × 0.9 = 72 → Discount = 28%</em> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q12-rameshs-salary-increased-from-15000-to-18000-by-what--did-it-increase">Q12. Ramesh's salary increased from ₹15,000 to ₹18,000. By what % did it increase? </h3>
+<ul>
+<li>(A) 15%</li>
+<li>(B) 16.67%</li>
+<li>(C) 20%</li>
+<li>(D) 25%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (C) 20%</strong><br>
+<strong>Solution:</strong><br>
+% increase = (18000-15000)/15000 × 100 = 3000/15000 × 100 = 1/5 × 100 = <strong>20%</strong> ✅</p>
+</blockquote>
+<hr>
+<hr>
+<h1 id="-hard-mcqs-10-questions">🔴 HARD MCQs (10 Questions) </h1>
+<hr>
+<h3 id="q13-a-mixture-contains-20-alcohol-if-10-litres-of-water-is-added-alcohol-becomes-15-find-the-original-quantity-of-mixture">Q13. A mixture contains 20% alcohol. If 10 litres of water is added, alcohol becomes 15%. Find the original quantity of mixture. </h3>
+<ul>
+<li>(A) 30 L</li>
+<li>(B) 40 L</li>
+<li>(C) 50 L</li>
+<li>(D) 60 L</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (A) 30 L</strong><br>
+<strong>Solution:</strong><br>
+Let original quantity = x litres<br>
+Alcohol = 20% of x = 0.2x (unchanged when water is added)<br>
+New total = x + 10<br>
+New % of alcohol = 15%<br>
+0.2x = 15% × (x + 10)<br>
+0.2x = 0.15x + 1.5<br>
+0.05x = 1.5<br>
+x = 1.5/0.05 = <strong>30 litres</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q14-seenas-income-is-25-more-than-reenas-reenas-income-is-what--less-than-seenas">Q14. Seena's income is 25% more than Reena's. Reena's income is what % less than Seena's? </h3>
+<ul>
+<li>(A) 20%</li>
+<li>(B) 22%</li>
+<li>(C) 25%</li>
+<li>(D) 16.67%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (A) 20%</strong><br>
+<strong>Solution:</strong><br>
+Seena = 1.25 × Reena<br>
+Reena = Seena / 1.25 = 4/5 × Seena<br>
+Reena is less than Seena by 1/5 = <strong>20%</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q15-a-b-c-got-40-35-25-of-1200-votes-respectively-what-is-the-difference-between-highest-and-lowest-votes">Q15. A, B, C got 40%, 35%, 25% of 1200 votes respectively. What is the difference between highest and lowest votes? </h3>
+<ul>
+<li>(A) 150</li>
+<li>(B) 160</li>
+<li>(C) 180</li>
+<li>(D) 200</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (C) 180</strong><br>
+<strong>Solution:</strong><br>
+A = 40% × 1200 = 480<br>
+B = 35% × 1200 = 420<br>
+C = 25% × 1200 = 300<br>
+Difference (A - C) = 480 - 300 = <strong>180</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q16-the-price-of-oil-increases-by-25-by-how-much--must-a-family-reduce-its-consumption-so-that-the-expenditure-remains-the-same">Q16. The price of oil increases by 25%. By how much % must a family reduce its consumption so that the expenditure remains the same? </h3>
+<ul>
+<li>(A) 20%</li>
+<li>(B) 22%</li>
+<li>(C) 25%</li>
+<li>(D) 23%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (A) 20%</strong><br>
+<strong>Solution (using the trick):</strong><br>
+Reduction = R/(100+R) × 100 = 25/125 × 100 = 1/5 × 100 = <strong>20%</strong> ✅<br>
+<em>Formula: If price rises by R%, reduce consumption by R/(100+R) × 100</em></p>
+</blockquote>
+<hr>
+<h3 id="q17-in-an-exam-60-of-students-passed-in-english-and-70-passed-in-math-20-failed-in-both-what--passed-in-both">Q17. In an exam, 60% of students passed in English and 70% passed in Math. 20% failed in both. What % passed in both? </h3>
+<ul>
+<li>(A) 30%</li>
+<li>(B) 40%</li>
+<li>(C) 50%</li>
+<li>(D) 60%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (C) 50%</strong><br>
+<strong>Solution:</strong><br>
+Failed in both = 20%, so at least one subject passed = 80%<br>
+By inclusion-exclusion:<br>
+P(E ∪ M) = P(E) + P(M) - P(E ∩ M)<br>
+80 = 60 + 70 - P(both)<br>
+P(both) = 130 - 80 = <strong>50%</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q18-a-person-spends-30-on-food-25-on-rent-15-on-education-he-saves-3000-from-remaining-find-his-income">Q18. A person spends 30% on food, 25% on rent, 15% on education. He saves ₹3,000 from remaining. Find his income. </h3>
+<ul>
+<li>(A) ₹10,000</li>
+<li>(B) ₹12,000</li>
+<li>(C) ₹15,000</li>
+<li>(D) ₹20,000</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (A) ₹10,000</strong><br>
+<strong>Solution:</strong><br>
+Total spent % = 30 + 25 + 15 = 70%<br>
+Remaining = 30%<br>
+30% of income = 3000<br>
+Income = 3000 × 100/30 = <strong>₹10,000</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q19-if-20-of-a--b--40-of-b-then-a-is-what--of-b">Q19. If 20% of (A + B) = 40% of B, then A is what % of B? </h3>
+<ul>
+<li>(A) 50%</li>
+<li>(B) 75%</li>
+<li>(C) 100%</li>
+<li>(D) 120%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (C) 100%</strong><br>
+<strong>Solution:</strong><br>
+20(A + B) = 40B<br>
+20A + 20B = 40B<br>
+20A = 20B<br>
+A = B → A/B × 100 = <strong>100%</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q20-a-shopkeeper-marks-his-goods-30-above-cost-price-and-gives-a-10-discount-his-profit-">Q20. A shopkeeper marks his goods 30% above cost price and gives a 10% discount. His profit %? </h3>
+<ul>
+<li>(A) 15%</li>
+<li>(B) 17%</li>
+<li>(C) 18%</li>
+<li>(D) 20%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (B) 17%</strong><br>
+<strong>Solution:</strong><br>
+Let CP = 100<br>
+MP = 130 (30% above)<br>
+SP = 130 × 0.90 = 117<br>
+Profit % = (117 - 100)/100 × 100 = <strong>17%</strong> ✅</p>
+</blockquote>
+<hr>
+<h3 id="q21-an-employees-salary-is-first-increased-by-10-and-then-decreased-by-10-if-original-salary-is-20000-find-the-final-salary">Q21. An employee's salary is first increased by 10% and then decreased by 10%. If original salary is ₹20,000, find the final salary. </h3>
+<ul>
+<li>(A) ₹19,800</li>
+<li>(B) ₹18,000</li>
+<li>(C) ₹20,000</li>
+<li>(D) ₹21,000</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (A) ₹19,800</strong><br>
+<strong>Solution:</strong><br>
+= 20000 × 1.10 × 0.90 = 20000 × 0.99 = <strong>₹19,800</strong> ✅<br>
+<em>(Net: 10 + (-10) + (10×-10)/100 = 0 - 1 = -1% → 20000 × 0.99 = 19800)</em></p>
+</blockquote>
+<hr>
+<h3 id="q22-in-a-class-40-are-girls-50-of-boys-and-60-of-girls-pass-an-exam-what--of-the-class-passed">Q22. In a class, 40% are girls. 50% of boys and 60% of girls pass an exam. What % of the class passed? </h3>
+<ul>
+<li>(A) 52%</li>
+<li>(B) 54%</li>
+<li>(C) 56%</li>
+<li>(D) 58%</li>
+</ul>
+<blockquote>
+<p><strong>✅ Answer: (C) 56%</strong><br>
+<strong>Solution:</strong><br>
+Girls = 40%, Boys = 60%<br>
+Passed = (60% of boys) + (60% of girls)<br>
+= (50% × 60%) + (60% × 40%)<br>
+= 30% + 24% = <strong>54%</strong></p>
+<p>Wait, recalculate:<br>
+= 0.50 × 0.60 + 0.60 × 0.40<br>
+= 0.30 + 0.24 = 0.54 = <strong>54%</strong> ✅<br>
+<strong>Correct Answer: (B) 54%</strong></p>
+</blockquote>
+<hr>
+<hr>
+<h1 id="-more-practice-problems">🧠 More Practice Problems </h1>
+<blockquote>
+<p><em>The more you practice, the faster you get!</em></p>
+</blockquote>
+<hr>
+<p><strong>P1.</strong> A number, when increased by 20% gives 360. Find the original number.</p>
+<blockquote>
+<p><strong>Answer:</strong> 360 × 100/120 = <strong>300</strong> ✅</p>
+</blockquote>
+<p><strong>P2.</strong> Ram scored 70% in an exam. If the total marks is 800, how many marks did he score?</p>
+<blockquote>
+<p><strong>Answer:</strong> 0.7 × 800 = <strong>560</strong> ✅</p>
+</blockquote>
+<p><strong>P3.</strong> Out of 500 students, 60% are boys. How many girls?</p>
+<blockquote>
+<p>Girls = 40% of 500 = 0.4 × 500 = <strong>200</strong> ✅</p>
+</blockquote>
+<p><strong>P4.</strong> A price increased by 10% and then by a further 10%. Effective % increase?</p>
+<blockquote>
+<p>Net = 10 + 10 + 1 = <strong>21%</strong> ✅</p>
+</blockquote>
+<p><strong>P5.</strong> By what % is 200 more than 150?</p>
+<blockquote>
+<p>= (200 - 150)/150 × 100 = 50/150 × 100 = <strong>33.33%</strong> ✅</p>
+</blockquote>
+<p><strong>P6.</strong> By what % is 150 less than 200?</p>
+<blockquote>
+<p>= (200 - 150)/200 × 100 = 50/200 × 100 = <strong>25%</strong> ✅</p>
+</blockquote>
+<p><strong>P7.</strong> If salary is cut by 30%, what % hike is needed to restore original?</p>
+<blockquote>
+<p>= 30/70 × 100 = <strong>42.86%</strong> ✅</p>
+</blockquote>
+<p><strong>P8.</strong> What is 150% of 80?</p>
+<blockquote>
+<p>= 1.5 × 80 = <strong>120</strong> ✅</p>
+</blockquote>
+<p><strong>P9.</strong> 30% of 40% of a number is 36. Find the number.</p>
+<blockquote>
+<p>0.3 × 0.4 × N = 36 → 0.12N = 36 → N = <strong>300</strong> ✅</p>
+</blockquote>
+<p><strong>P10.</strong> In a village, 64% are literate. If 2304 people are illiterate, find total population.</p>
+<blockquote>
+<p>Illiterate = 36%<br>
+36% of Total = 2304<br>
+Total = 2304 × 100/36 = <strong>6400</strong> ✅</p>
+</blockquote>
+<p><strong>P11.</strong> A factory's production increased by 20% in the 1st year and decreased by 10% in the 2nd year. Net % change?</p>
+<blockquote>
+<p>Net = 20 + (-10) + (20 × -10)/100 = 10 - 2 = <strong>+8%</strong> ✅</p>
+</blockquote>
+<p><strong>P12.</strong> A's income = 80% of B's. B's income = 75% of C's. A's income as % of C's?</p>
+<blockquote>
+<p>A = 0.80B = 0.80 × 0.75C = 0.60C = <strong>60%</strong> ✅</p>
+</blockquote>
+<hr>
+<hr>
+<h1 id="-tcs-nqt-special-common-question-patterns">🎯 TCS NQT Special: Common Question Patterns </h1>
+<blockquote>
+<p>TCS NQT repeats these <strong>five patterns</strong> the most in Percentage!</p>
+</blockquote>
+<h2 id="pattern-1--what--is-x-of-y--y-of-x">Pattern 1 — "What % is X of Y / Y of X?" </h2>
+<p><em>Watch base carefully!</em></p>
+<ul>
+<li>X is what % of Y → (X/Y) × 100</li>
+<li>Y is what % of X → (Y/X) × 100</li>
+</ul>
+<h2 id="pattern-2--salaryprice-increase-then-decrease">Pattern 2 — "Salary/Price increase then decrease" </h2>
+<p><em>Always use Net % formula or multiply factors!</em></p>
+<ul>
+<li>Successive changes: Net = a + b + ab/100 (negative for decrease)</li>
+</ul>
+<h2 id="pattern-3--exam-passfail">Pattern 3 — "Exam pass/fail" </h2>
+<p><em>Set up equation using pass marks!</em></p>
+<ul>
+<li>Pass marks = scored + fail-by (if failed)</li>
+<li>Pass marks = scored - excess (if passed by N marks)</li>
+</ul>
+<h2 id="pattern-4--a-is-x-moreless-than-b--then-b-is--moreless-than-a">Pattern 4 — "A is X% more/less than B — then B is ?% more/less than A" </h2>
+<p><em>TCS TRAP! Always recalculate from B's perspective!</em></p>
+<ul>
+<li>If A = (1 + r/100) × B → B is less than A by r/(100+r) × 100 %</li>
+</ul>
+<h2 id="pattern-5--population-growth">Pattern 5 — "Population growth" </h2>
+<p><em>Use compound % formula: P × (1 ± r/100)^n</em></p>
+<hr>
+<h2 id="-common-mistakes-to-avoid-in-tcs-nqt">🚀 Common Mistakes to AVOID in TCS NQT </h2>
+<table>
+<thead>
+<tr>
+<th>Mistake ❌</th>
+<th>Correct Approach ✅</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>If salary rises 20% + 20% = 40% increase</td>
+<td>Use net formula: 20+20+4 = <strong>44%</strong></td>
+</tr>
+<tr>
+<td>A is 30% more than B → B is 30% less than A</td>
+<td>B is <strong>23.07%</strong> less (not 30%)</td>
+</tr>
+<tr>
+<td>Price rose 25%, cut consumption by 25% to maintain</td>
+<td>Cut by <strong>20%</strong> (not 25%)</td>
+</tr>
+<tr>
+<td>Two discounts 20%+10% = 30% total</td>
+<td>Net discount = <strong>28%</strong></td>
+</tr>
+<tr>
+<td>25% of 80 ≠ 80% of 25 (different)</td>
+<td>They ARE equal = <strong>20</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-quick-revision-summary">📘 Quick Revision Summary </h2>
+<pre data-role="codeBlock" data-info="" class="language-text"><code>Basic     : Part/Whole × 100
+Find Part : (%) / 100 × Whole
+Find Whole: Part × 100 / (%)
+% Change  : (Change / Original) × 100
+Successive: a + b + ab/100
+Comp/Dep  : P × (1 ± r/100)^n
+</code></pre><hr>
+<blockquote>
+<p><strong>🏁 Next Topic → 02_Profit_and_Loss.md</strong><br>
+<em>Build on % concepts — profit/loss percentage, marked price, discount!</em></p>
+</blockquote>
+<hr>
+<p><em>Guide created for TCS NQT Preparation | All methods, formulas, and MCQs from simple to advanced</em></p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
